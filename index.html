@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Store</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css">
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<header>
+    <h1 class="text-center"><b>NEW STORE</b></h1>
+    <hr>
+    <button class="btn btn-success m-5" id="inicioSesion">Inicio de sesion</button>
+</header>
+
+<body class="container">
+
+    <div id="divProducts" class="row"></div>
+    
+    <hr>
+    <br>
+    
+    <center><h2>Carrito de Compras</h2></center>
+    <center><h3>El total de la compra es de<span id="total"></span></h3></center>
+    <div><center>
+    <button class="btn colorBoton" id="viewCart">Ver Carrito</button>
+    <button class="btn colorBoton" id="emptyCart">Vaciar Carrito</button>
+    </center></div>
+
+    <div id="divCart" class="row"></div>
+    <hr>
+
+<!-- FOOTER -->
+    <footer>
+        <div class="mx-auto col-md-4 d-flex align-items-center">
+            <span class="text-muted">&copy; 26/10/2022 New Store - JavaScript Emmanuel Leiva</span>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
