@@ -60,7 +60,7 @@ const viewProducts = () =>{
                 <p class="card-text"> <b>Color:</b> ${product.color}</p>
                 <p class="card-text"> <b>Precio:</b> $${product.price}</p>
                 <hr>
-                <center><button class="btn colorBoton" id="boton${product.id}"> AGREGAR AL CARRITO </button></center>
+                <button class="btn colorBoton" id="boton${product.id}"> AGREGAR AL CARRITO <i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>            
         `
@@ -193,6 +193,7 @@ const emptyAllCart = () =>{
     localStorage.clear();
 }
 
+
 // ----------------------------------------------------------------------------------------------------------------------------
 
 // Mostrar total
@@ -237,3 +238,8 @@ inicioSesion.addEventListener("click", ()=> {
         }
     })
 });
+
+// ----------------------------------------------------------------------------------------------------------------------------
+
+const addToShoppingCardButtons = document.querySelectorAll(".addToCart");
+console.log(addToShoppingCardButtons);

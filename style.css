@@ -21,6 +21,35 @@
 }
 
 body {
-    background: linear-gradient(#B7950B, #FDEBD0);
+    /* background: linear-gradient(#B7950B, #FDEBD0); */
     font-family: sans-serif;
+    overflow-x: hidden;
+    background-image: url('/img/background.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 50%;
+
+}
+
+.modal-content {
+    background-color: #E3D8D6;
+}
+
+.modal-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-carrito {
+    width: 200px;
+    padding: 20px;
+}
+
+h2 {
+    color: goldenrod
+}
+
+h3 {
+    color: goldenrod
 }

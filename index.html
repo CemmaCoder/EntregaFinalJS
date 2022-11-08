@@ -4,45 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML, CSS, JavaScript">                      <!-- Define "palabras claves" para motores de busqueda -->
+    <meta name="author" content="Emmanuel Leiva">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Store</title>
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
     <link rel="stylesheet" href="style.css">
     <!-- BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- TOASTIFY -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Icon -->
+    <link rel="icon" href="/img/cart.png">  
 </head>
 
 <header>
-    <h1 class="text-center"><b>NEW STORE</b></h1>
-    <hr>
-    <button class="btn btn-success m-5" id="inicioSesion">Inicio de sesion</button>
+    <nav class="navbar navbar-light min-vw-50">
+        <h3 class="p-3 text-white">New Store</h3>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                    <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-xl">
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Aqui estan tus productos!</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="vaciarCarrito">Vaciar carrito</button>
+                    <button type="button" class="btn btn-primary" id="procesarCompra">Continuar compra</button>
+                    <button type="button" class="btn btn-secondary" id="procesarCompra">Cerrar</button>
 </header>
 
-<body class="container">
+<body>
 
+<body class="container">
     <div id="divProducts" class="row"></div>
     
     <hr>
     <br>
-    
-    <center><h2>Carrito de Compras</h2></center>
+    <div>
     <center><h3>El total de la compra es de<span id="total"></span></h3></center>
     <div><center>
-    <button class="btn colorBoton" id="viewCart">Ver Carrito</button>
-    <button class="btn colorBoton" id="emptyCart">Vaciar Carrito</button>
+        <button class="btn colorBoton text-bg-light" id="viewCart">Ver Carrito</button>
+        <button class="btn colorBoton text-bg-light" id="emptyCart">Vaciar Carrito</button>
     </center></div>
 
-    <div id="divCart" class="row"></div>
-    <hr>
+    <div id="divCart" class="row"></div> -->
+    
 
-<!-- FOOTER -->
     <footer>
-        <div class="mx-auto col-md-4 d-flex align-items-center">
-            <span class="text-muted">&copy; 26/10/2022 New Store - JavaScript Emmanuel Leiva</span>
-        </div>
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+                </section>
+            </div>
+            <!-- Copyright -->
+            <div class="mx-auto col-md-4 d-flex align-items-center">
+                <span class="text-muted">&copy; 26/10/2022 New Store - JavaScript Emmanuel Leiva</span>
+            </div>
     </footer>
     
     <!-- JavaScript Bundle with Popper -->
